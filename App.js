@@ -1,12 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import Onboarding from './assets/components/Onboarding';
+import ProductListingItem from './assets/components/ProductListingItem';
+import Contact from './assets/components/NewFile';
+import ImageAutoSlide from './assets/components/ImageAutoSlide';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+     <ImageAutoSlide/>
+    </SafeAreaView>
+    // <View style={styles.container}>
+    //   {/* <Onboarding/> */}
+    //   {/* <ProductListingItem/> */}
+      
+    // </View>
   );
 }
 
